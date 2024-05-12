@@ -1,0 +1,18 @@
+jar {
+    enabled = false
+}
+
+dependencies {
+    implementation project(':blog-core')
+
+    // spring
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    // test
+    testImplementation 'org.springframework.boot:spring-boot-test-autoconfigure'
+
+    // config
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+}
